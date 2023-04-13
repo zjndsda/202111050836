@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>张健宁</title>
+	<meta name="keywords" content="陈奕迅。">
+	<meta name="author" content="eason">
+	<meta http-equiv="refresh" content="60;url=main.html">
+	<style>
+		body {
+			background-color: #F0F0F0;
+		}
+		/* 内嵌样式 */
+		h1 {
+			color: red;
+			font-size: 36px;
+			font-family: Arial, sans-serif;
+			background-color: yellow;
+			text-align: center;
+		}
+		/* 类选择器 */
+		.p1 {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		/* ID选择器 */
+		#top {
+			font-size: 18px;
+			font-weight: normal;
+		}
+		/* 组合选择器 */
+		h1 + p {
+			color: green;
+			font-size: 18px;
+			font-family: "Times New Roman", serif;
+		}
+		/* 包含选择器 */
+		body * {
+			border: 1px solid black;
+			padding: 10px;
+			margin: 10px;
+		}
+		/* 外部样式表 */
+		@media screen and (max-width: 600px) {
+			h1 {
+				font-size: 24px;
+			}
+			.p1 {
+				font-size: 18px;
+			}
+			#top {
+				font-size: 14px;
+			}
+			h1 + p {
+				font-size: 16px;
+			}
+			body * {
+				padding: 5px;
+				margin: 5px;
+			}
+		}
+		
+		a:link {
+			color: blue;
+		}
+		a:visited {
+			color: purple;
+		}
+		a:hover {
+			color: red;
+		}
+		a:active {
+			color: green;
+		}
+	
+	</style>
+</head>
+<body>
+	<h1>欢迎来到我的网站！</h1>
+	<p>陈奕迅。</p>
+	<a id="top">这里是TOP部分</a> 
+	<p>十面埋伏。</p>
+	<p>加粗<strong>明年今日</strong></p>
+	<p>斜体<em>明年今日</em>。</p>
+	<p>下划线<u>明年今日</u>。</p>
+	<p>删除<del>明年今日</del></p>
+	<hr>
+	<img src="R.jpg" alt="百度" width="400" height="300">
+	<br>
+	<a href="https://www.bilibili.com/video/BV1AX4y1u7aD/?spm_id_from=333.337.search-card.all.click">这是十面埋伏超链接</a>
+	<br>
+	<a href="https://www.bilibili.com/video/BV1fv411y7BV/?spm_id_from=333.337.search-card.all.click"><img src="R.jpg" alt="陈奕迅" width="100" height="100"></a>
+	<br>
+	<a href="#top">点击我连接到TOP</a>
+	<br>
+	<form action="submit.php" method="post">
+		<label>文本框：<input type="text" name="text"></label>
+		<br>
+		<label>密码框：<input type="password" name="password"></label>
+		<br>
+		<label>单选框：<input type="radio" name="radio" value="1">选项1<input type="radio" name="radio" value="2">选项2</label>
+		<br>
+		<label>复选框：<input type="checkbox" name="checkbox" value="1">选项1<input type="checkbox" name="checkbox" value="2">选项2</label>
+		<br>
+		<label>下拉列表：<select name="select"><option value="1">选项1</option><option value="2">选项2</option></select></label>
+		<br>
+		<input type="submit" value="提交">
+		<input type="reset" value="重置">
+	</form>
+	<br>
+	<table border="1">
+		<tr>
+			<th>十面埋伏</th>
+			<th>明年今日</th>
+		</tr>
+		<tr>
+			<td>十面埋伏</td>
+			<td>明年今日</td>
+		</tr>
+		<tr>
+			<td>十面埋伏</td>
+			<td>明年今日</td>
+		</tr>
+	</table>
+	<br>
+</body>
+</html>
