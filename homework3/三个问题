@@ -1,1 +1,71 @@
 
+Css的两大作用：
+1、简化了页面的格式代码，外部的样式表还会被浏览器保存在缓存中，加快了加载速度，也减少了需要上传的代码数量。
+2、只要修改保存着网站格式的CSS样式表文件，就可以更改整个网站的风格和特色，这对于大型网站，多页面网站有着重要作用。避免了逐个页面的修改，缩短了修改页面的时间。
+
+Css选择符有哪几类，分别举例说明
+1. HTML选择符
+1 <!DOCTYPE html>
+ 2 <html lang="en">
+ 3 <head>
+ 4     <meta charset="UTF-8">
+ 5     <title>Title</title>
+ 6     <style type="text/css">
+ 7         p{
+ 8             font-size:15px;
+ 9             color:#FF0000;
+10         }
+11     </style>
+12 
+13 </head>
+14 <body>
+15     <p>这是第一段文字</p >
+16     <p>这是第二段文字</p >
+
+17     <p>这是第三段文字</p >
+18 
+19 </body>
+20 </html>
+2. 类选择符
+3.  <!DOCTYPE html>
+4.  <html lang="en">
+5.  <head>
+6.      <meta charset="UTF-8">
+7.      <title>Title</title>
+8.      <style type="text/css">
+9.          #p1{
+10.              font-size:15px;
+11.              color:#FF0000;
+12.          }
+13.      </style>
+14.  
+15.  </head>
+16.  <body>
+17.      <p id="p1">这是第一段文字,有样式效果</p >
+18.      <p>这是第二段文字，无样式效果</p >
+19.  
+20.  </body>
+21.  </html>
+3.ID选择符
+<html>
+<head>
+<style type="text/css">
+#intro {font-weight:bold;}
+</style>
+</head>
+
+<body>
+<p id="intro">This is a paragraph of introduction.</p >
+
+<p>This is a paragraph.</p >
+
+<p>This is a paragraph.</p >
+
+<p>This is a paragraph.</p >
+
+<p>...</p >
+</body>
+</html>
+
+Css的使用方式有哪几类，相对优先级如何
+内联式、嵌入式和外部式三种，这三种样式是有优先级的，他们的优先级是：内联式 > 嵌入式 > 外部式，
