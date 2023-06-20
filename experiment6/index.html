@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Initialization</title>
+  <script src="script.js"></script>
+</head>
+<body onload="initializePage()">
+  <h1>Dynamic Initialization</h1>
+  <p id="currentTime"></p>
+  
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table body content will be initialized dynamically -->
+    </tbody>
+  </table>
+
+  <button onclick="showConfirmation()">Submit</button>
+
+  <div id="elementToToggle" onclick="toggleElement()">Click me to toggle</div>
+  <div id="targetElement">This element will be hidden or shown</div>
+
+  <div id="mouseCoordinates"></div>
+</body>
+</html>
